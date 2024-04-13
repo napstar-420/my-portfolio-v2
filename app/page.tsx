@@ -34,27 +34,27 @@ function HeroSection() {
   ];
 
   return (
-    <section className="relative mx-14 grid grid-cols-2 gap-4 pb-9 pt-36">
-      <div className="absolute -bottom-10 left-1/2 -z-10 w-3/4 max-w-screen-lg translate-x-[-50%]">
-        <Image src={MyPic} alt="Pic of Zohaib" className="w-full" />
-      </div>
-      <div className="flex flex-col gap-4">
-        <div className="mb-12 h-2 w-40 bg-white" />
-        <h1 className="text-7xl font-bold">
+    <section className="relative grid gap-4 overflow-y-hidden px-8 pb-9 pt-20 sm:grid-cols-2 lg:mx-14 lg:px-0 lg:pt-36">
+      {/* FIXME: Fix typo too close at lg breakpoint */}
+      <div className="flex flex-col gap-4 lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-2">
+        <div className="mb-2 h-1 w-40 bg-white lg:mb-12 lg:h-2" />
+        <h1 className="text-4xl font-bold lg:text-7xl">
           Hey there<span className="text-primary">!</span>
           <br />
           i&apos;m Zohaib, a<br />
           Web Developer
         </h1>
-        <p className="text-light text-lg">
-          I merge creativity and functionality to <br />
+        <p className="text-light lg:text-lg">
+          I merge creativity and functionality to{' '}
+          <br className="hidden max-w-full lg:block" />
           visually stunning and user-friendly websites.
         </p>
       </div>
-      <div className="flex max-w-96 flex-col gap-14 justify-self-end">
+      <div className="bar-muted my-5 sm:hidden" />
+      <div className="grid gap-10 sm:col-start-1 sm:col-end-3 sm:mt-16 sm:grid-cols-2 lg:row-start-1 lg:row-end-2 lg:max-w-96 lg:grid-cols-1 lg:gap-14 lg:justify-self-end">
         <div className="flex flex-col gap-4">
-          <h2 className="text-lg font-bold uppercase">About me</h2>
-          <p className="text-light text-lg">
+          <h2 className="font-bold uppercase lg:text-lg">About me</h2>
+          <p className="text-light lg:text-lg">
             I&apos;m Zohaib, a web developer passionate about crafting stunning
             and user-friendly websites. Stay tuned to learn more about my
             journey in the digital realm.
@@ -62,17 +62,17 @@ function HeroSection() {
           <RedirectLink href="/about" label="Learn more" />
         </div>
         <div className="bar-muted" />
-        <div className="flex flex-col gap-4">
-          <h2 className="text-lg font-bold uppercase">My work</h2>
-          <p className="text-light text-lg">
+        <div className="flex flex-col gap-4 sm:col-start-1 sm:col-end-2 sm:row-start-1 sm:row-end-2 lg:row-start-3 lg:row-end-4">
+          <h2 className="font-bold uppercase lg:text-lg">My work</h2>
+          <p className="text-light lg:text-lg">
             I believe in creating immersive digital experiences that resonate
             with audiences and deliver measurable results.
           </p>
           <RedirectLink href="/portfolio" label="Browse portfolio" />
         </div>
         <div className="bar-muted" />
-        <div className="flex flex-col gap-4">
-          <h2 className="text-lg font-bold uppercase">Follow me</h2>
+        <div className="flex flex-1 flex-col gap-4">
+          <h2 className="font-bold uppercase lg:text-lg">Follow me</h2>
           <div className="flex gap-4 text-3xl">
             {socialMediaLinks.map(({ icon, href }, index) => (
               <Link target="_blank" key={index} href={href}>
@@ -81,6 +81,13 @@ function HeroSection() {
             ))}
           </div>
         </div>
+      </div>
+      <div className="bottom-0 row-start-2 row-end-3 mx-auto w-4/5 overflow-hidden rounded-[50%] border sm:col-start-2 sm:col-end-3 sm:row-start-1 sm:row-end-2 sm:h-max sm:w-3/5 sm:self-center lg:absolute lg:-bottom-24 lg:left-1/2 lg:-z-10 lg:col-start-1 lg:col-end-3 lg:w-4/5 lg:translate-x-[-50%] lg:rounded-none lg:border-0">
+        <Image
+          src={MyPic}
+          alt="Pic of Zohaib"
+          className="translate-y-4 lg:translate-y-0"
+        />
       </div>
     </section>
   );

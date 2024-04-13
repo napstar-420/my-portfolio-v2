@@ -13,6 +13,9 @@ const config: Config = {
         light: '#c3cad5',
         muted: '#2d343f',
       },
+      screens: {
+        xs: '480px',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
