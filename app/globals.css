@@ -11,3 +11,9 @@ body {
   color: var(--foreground-main);
   background: var(--background-main);
 }
+
+@layer components {
+  .bar-muted {
+    @apply bg-muted h-[2px] w-full;
+  }
+}
