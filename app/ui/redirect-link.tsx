@@ -17,12 +17,12 @@ export default function RedirectLink({
     <Link
       href={href}
       className={clsx(
-        'redirect-btn border-muted flex max-w-max items-center gap-2 border-b-2 py-2 uppercase',
+        'redirect-link border-muted flex max-w-max items-center gap-2 border-b-2 py-2 uppercase',
         className,
       )}
     >
       {label}
-      <LuArrowRight />
+      <LuArrowRight className="transition-transform" />
     </Link>
   );
 }
