@@ -12,14 +12,10 @@ const config: Config = {
         primary: '#075fe4',
         light: '#c3cad5',
         muted: '#2d343f',
+        'background-secondary': '#22282f',
       },
       screens: {
         xs: '480px',
-      },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
   },
