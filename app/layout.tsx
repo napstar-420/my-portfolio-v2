@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <div className="mx-auto max-w-screen-xl">
+        <div className="">
           <Header />
           {children}
         </div>

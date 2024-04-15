@@ -14,7 +14,7 @@ body {
 
 @layer components {
   .bar-muted {
-    @apply bg-muted h-[1px] w-full;
+    @apply bg-dark h-[1px] w-full;
   }
 }
 
@@ -26,8 +26,8 @@ body {
   content: '';
   position: absolute;
   width: 0%;
-  height: 2px;
-  bottom: 0%;
+  height: 4px;
+  bottom: -4px;
   left: 0%;
   background-color: var(--foreground-main);
   transition: all 300ms ease;
