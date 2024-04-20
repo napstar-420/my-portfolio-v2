@@ -1,4 +1,6 @@
-import HeartbeatImage from '@/public/projects/heartbeat-project.png';
+import HeartbeatImage from '@/app/images/heartbeat-project.png';
+import StudioImage from '@/app/images/studio-project.png';
+import PhotosImage from '@/app/images/photos-project.png';
 
 const portfolioItems = [
   {
@@ -11,13 +13,13 @@ const portfolioItems = [
     title: 'Studio',
     description: 'Website development for admins and users to manage moments.',
     skills: ['Quasar', 'Nest'],
-    image: HeartbeatImage,
+    image: StudioImage,
   },
   {
     title: 'Photos',
     description: 'A better way to view your photos: Just hover!',
     skills: ['Vue JS', 'Node', 'Knex'],
-    image: HeartbeatImage,
+    image: PhotosImage,
   },
 ];
 
