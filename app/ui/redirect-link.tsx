@@ -1,17 +1,20 @@
 import Link from 'next/link';
 import { LuArrowRight } from 'react-icons/lu';
 import clsx from 'clsx';
+import { Routes } from '@/app/routes';
 
 interface ComponentProps {
   label: string;
-  href: string;
+  href: Routes | string;
   className?: string;
+  iconClassName?: string;
 }
 
 export default function RedirectLink({
   label,
   href,
   className,
+  iconClassName,
 }: ComponentProps) {
   return (
     <Link
@@ -22,7 +25,7 @@ export default function RedirectLink({
       )}
     >
       {label}
-      <LuArrowRight className="transition-transform" />
+      <LuArrowRight className={clsx('transition-transform', iconClassName)} />
     </Link>
   );
 }

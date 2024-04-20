@@ -1,6 +1,7 @@
 import RedirectLink from '@/app/ui/redirect-link';
 import portfolioItems from '@/app/lib/portfolio';
 import PortfolioCard from '../portfolio-card';
+import { Routes } from '@/app/routes';
 
 export default function Portfolio() {
   return (
@@ -14,7 +15,10 @@ export default function Portfolio() {
             <h3 className="mb-8 text-2xl font-bold sm:text-4xl lg:text-5xl">
               Take a look at the latest projects I’ve done
             </h3>
-            <RedirectLink label="Browser all projects" href="/portfolio" />
+            <RedirectLink
+              label="Browser all projects"
+              href={Routes.PORTFOLIO}
+            />
           </div>
           <PortfolioCard {...portfolioItems[0]} />
         </div>

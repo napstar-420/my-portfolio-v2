@@ -1,8 +1,9 @@
 import RedirectLink from '@/app/ui/redirect-link';
+import { Routes } from '@/app/routes';
 
 export default function About() {
   return (
-    <section className="bg-background grid place-items-center px-5 pb-16 pt-24">
+    <section className="grid place-items-center bg-background px-5 pb-16 pt-24">
       <div className="mx-auto grid max-w-screen-xl gap-16 sm:gap-24 lg:grid-cols-2 lg:items-center">
         <div className="">
           <h2 className="mb-4 text-lg font-bold uppercase sm:text-xl">
@@ -18,7 +19,7 @@ export default function About() {
             captivate and engage users.
           </p>
           <RedirectLink
-            href="/about"
+            href={Routes.ABOUT}
             label="More about me"
             className="capitalize sm:text-2xl"
           />

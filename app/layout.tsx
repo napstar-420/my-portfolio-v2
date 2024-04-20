@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
-import { Space_Grotesk } from 'next/font/google';
 import './globals.css';
-import Header from './ui/header';
+import { Space_Grotesk } from 'next/font/google';
+import Header from '@/app/ui/header';
+import Footer from '@/app/ui/footer';
 
 const font = Space_Grotesk({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
           <Header />
           {children}
         </div>
+        <Footer />
       </body>
     </html>
   );
