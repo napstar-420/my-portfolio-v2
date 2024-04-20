@@ -11,7 +11,7 @@ const navLinks = [
 
 export default function Header() {
   return (
-    <header className="mx-2 flex max-w-screen-xl items-center justify-between px-6 py-9 lg:mx-auto">
+    <header className="mx-2 flex max-w-screen-xl items-center justify-between px-6 py-6 lg:mx-auto">
       <Link
         href={Routes.HOME}
         className="flex items-center gap-2 text-2xl font-bold transition-transform hover:scale-110"

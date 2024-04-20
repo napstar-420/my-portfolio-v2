@@ -19,10 +19,8 @@ export default function Footer() {
               />
             </div>
             <div className="col-start-2 col-end-4">
-              <h5 className="text-xl font-bold sm:text-2xl md:text-3xl">
-                Zohaib Khan
-              </h5>
-              <p className="text-light-medium sm:text-xl">
+              <h5 className="text-display-5">Zohaib Khan</h5>
+              <p className="text-400 font-medium text-neutral-500">
                 Fullstack engineer at Freedom.tm
               </p>
             </div>
@@ -43,7 +41,7 @@ export default function Footer() {
 
           <div className="flex flex-col gap-8 sm:flex-row md:gap-10 lg:flex-col">
             <div>
-              <span className="text-light-medium font-bold">EMAIL ME:</span>
+              <span className="font-bold text-neutral-400">EMAIL ME:</span>
               <RedirectLink
                 label="dev.zohaib.work@gmail.com"
                 href="mailto:dev.zohaib.work@gmail.com"
@@ -51,7 +49,7 @@ export default function Footer() {
               />
             </div>
             <div>
-              <span className="text-light-medium font-bold">CONTACT ME:</span>
+              <span className="font-bold text-neutral-400">CONTACT ME:</span>
               <RedirectLink
                 label="+92-322-3947372"
                 href="tel:+923223947372"
@@ -73,7 +71,7 @@ export default function Footer() {
           ))}
         </div>
         <div>
-          <p className="text-light-medium">
+          <p className="text-neutral-500">
             Created by{' '}
             <Link href={Routes.HOME} className="font-bold text-primary">
               Napstar

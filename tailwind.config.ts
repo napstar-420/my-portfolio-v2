@@ -9,12 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#075fe4',
-        light: '#c3cad5',
-        medium: '#5d6c83',
-        'light-medium': '#8895aa',
-        dark: '#2d343f',
-        background: '#22282f',
+        primary: '#075FE4',
+        secondary: '#2E81FF',
+        'neutral-800': '#1B1F24',
+        'neutral-700': '#2D343F',
+        'neutral-600': '#5D6C83',
+        'neutral-500': '#8895AA',
+        'neutral-400': '#C3CAD5',
+        'neutral-300': '#E4E7EC',
+        'neutral-200': '#F0F2F4',
+        'neutral-100': '#FFFFFF',
       },
       screens: {
         xs: '480px',

@@ -14,10 +14,10 @@ export default function Skills() {
   return (
     <section className="py-24 lg:py-60">
       <div className="mx-auto mb-12 max-w-screen-xl px-5 lg:mb-16">
-        <h2 className="mb-4 text-lg font-bold uppercase sm:text-xl">
+        <h2 className="subtitle mb-4">
           <span className="text-primary">/</span>&nbsp;&nbsp;My skills
         </h2>
-        <h3 className="mb-4 flex items-center justify-between text-2xl font-bold sm:text-4xl lg:text-5xl">
+        <h3 className="text-display-3 mb-4 flex items-center justify-between">
           My extensive list of skills
           <div className="hidden items-center justify-center gap-6 px-5 lg:flex">
             <CarouselNavigation emblaApi={emblaApi} />
@@ -30,14 +30,12 @@ export default function Skills() {
             return (
               <div
                 key={index}
-                className="embla__slide flex flex-[0_0_100%] flex-col items-start gap-4 rounded-2xl bg-dark px-8 pb-14 pt-16 sm:flex-[0_0_434px] lg:px-14 lg:pb-24 lg:pt-32"
+                className="embla__slide flex flex-[0_0_100%] flex-col items-start gap-4 rounded-2xl bg-neutral-700 px-8 pb-14 pt-16 sm:flex-[0_0_434px] lg:px-14 lg:pb-24 lg:pt-32"
               >
                 <span className="grid place-items-center rounded-[50%] bg-primary p-3 text-6xl">
                   <Icon />
                 </span>
-                <h4 className="text-xl font-bold sm:text-3xl lg:text-4xl">
-                  {title}
-                </h4>
+                <h4 className="text-display-4">{title}</h4>
                 <p className="text-light sm:text-xl lg:text-2xl">
                   {description}
                 </p>
