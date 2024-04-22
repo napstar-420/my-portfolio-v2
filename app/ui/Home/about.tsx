@@ -39,11 +39,11 @@ export default function About() {
           </p>
         </div>
         <div className="bar-muted lg:col-start-1 lg:col-end-3"></div>
-        <div className="lg:col-start-1 lg:col-end-3">
-          <h2 className="text-300 text-center font-bold uppercase">
+        <div className="items-center md:flex lg:col-start-1 lg:col-end-3">
+          <h2 className="text-300 flex-1 text-center font-bold uppercase md:text-left">
             Previously worked with
           </h2>
-          <div className="text-400 mt-7 flex items-start justify-around font-bold uppercase">
+          <div className="text-400 mt-7 flex items-start justify-around font-bold uppercase md:mt-0 md:gap-16">
             <h3>Plotano</h3>
             <h3>Freedom</h3>
           </div>
