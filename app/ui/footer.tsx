@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="mx-auto max-w-screen-xl px-5 pb-6 pt-20 lg:pb-10 lg:pt-28">
         <div className="justify-between lg:flex">
           <div>
-            <div className="flex items-center gap-6">
+            <div data-aos="fade-up" className="flex items-center gap-6">
               <div className="max-w-28 overflow-hidden rounded-full border">
                 <Image src={myImage} alt="Image of Zohaib Khan" />
               </div>
@@ -24,12 +24,12 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="py-8 md:py-10">
+            <div data-aos="fade-up" className="py-8 md:py-10">
               <SocialMediaLinks className="md:gap-6 md:text-4xl" />
             </div>
           </div>
 
-          <div className="flex flex-col gap-8 md:gap-10">
+          <div data-aos="fade-up" className="flex flex-col gap-8 md:gap-10">
             <RedirectLink
               label="Get in touch"
               href={Routes.CONTACT}

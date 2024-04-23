@@ -9,7 +9,10 @@ export default function Skills() {
 
   return (
     <section className="py-24 lg:py-60">
-      <div className="mx-auto mb-12 max-w-screen-xl px-5 lg:mb-16">
+      <div
+        data-aos="fade-up"
+        className="mx-auto mb-12 max-w-screen-xl px-5 lg:mb-16"
+      >
         <h2 className="subtitle mb-4">
           <span className="text-primary">/</span>&nbsp;&nbsp;My skills
         </h2>
@@ -20,7 +23,7 @@ export default function Skills() {
           </div>
         </h3>
       </div>
-      <div className="embla overflow-hidden" ref={emblaRef}>
+      <div data-aos="fade-up" className="embla overflow-hidden" ref={emblaRef}>
         <div className="embla__container flex gap-4 px-4">
           {skillsSet.map(({ title, description, Icon }, index) => {
             return (

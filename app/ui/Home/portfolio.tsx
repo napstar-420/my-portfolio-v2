@@ -8,7 +8,7 @@ export default function Portfolio() {
     <section className="bg-neutral-700 bg-opacity-40">
       <div className="mx-auto grid max-w-7xl gap-8 px-5 py-24 md:grid-cols-2 md:gap-10">
         <div>
-          <div className="mb-16">
+          <div className="mb-16" data-aos="fade-up">
             <h2 className="subtitle mb-4">
               <span className="text-primary">/</span>&nbsp;&nbsp;My Portfolio
             </h2>

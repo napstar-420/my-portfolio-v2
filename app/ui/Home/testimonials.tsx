@@ -12,7 +12,10 @@ export default function Testimonials() {
 
   return (
     <section className="relative mx-auto max-w-7xl px-5 py-24 lg:py-60">
-      <div className="mb-12 grid content-between items-center gap-7 md:grid-cols-2">
+      <div
+        data-aos="fade-up"
+        className="mb-12 grid content-between items-center gap-7 md:grid-cols-2"
+      >
         <div>
           <h2 className="subtitle">
             <span className="text-primary">/</span>&nbsp;&nbsp;TESTIMONIALS
@@ -25,14 +28,17 @@ export default function Testimonials() {
           className="underline-large text-heading-3 inline-block capitalize md:place-self-end"
         />
       </div>
-      <div className="embla overflow-hidden" ref={emblaRef}>
+      <div data-aos="fade-up" className="embla overflow-hidden" ref={emblaRef}>
         <div className="embla__container flex gap-4 px-4">
           {testimonials.map((testimonial, index) => (
             <TestimonialCard key={index} {...testimonial} />
           ))}
         </div>
       </div>
-      <div className="mt-20 flex items-center justify-center lg:absolute lg:bottom-72 lg:right-4 lg:mt-0">
+      <div
+        data-aos="fade-up"
+        className="mt-20 flex items-center justify-center lg:absolute lg:bottom-72 lg:right-4 lg:mt-0"
+      >
         <div className="flex gap-8">
           <CarouselNavigation emblaApi={emblaApi} />
         </div>

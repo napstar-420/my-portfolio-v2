@@ -7,7 +7,10 @@ import { Routes } from '@/app/routes';
 export default function HeroSection() {
   return (
     <section className="relative mx-auto grid max-w-screen-xl gap-4 overflow-y-hidden px-5 pb-9 pt-12 sm:grid-cols-2 lg:px-8 lg:pt-36">
-      <div className="lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-2">
+      <div
+        data-aos="fade-up"
+        className="lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-2"
+      >
         <div className="heading-top-line large" />
         <h1 className="text-display-2 mb-[10px]">
           Hey there<span className="text-primary">!</span>
@@ -22,7 +25,10 @@ export default function HeroSection() {
         </p>
       </div>
       <div className="bar-muted my-5 sm:hidden" />
-      <div className="grid gap-10 sm:col-start-1 sm:col-end-3 sm:mt-16 sm:grid-cols-2 lg:row-start-1 lg:row-end-2 lg:max-w-96 lg:grid-cols-1 lg:gap-14 lg:justify-self-end">
+      <div
+        data-aos="fade-up"
+        className="grid gap-10 sm:col-start-1 sm:col-end-3 sm:mt-16 sm:grid-cols-2 lg:row-start-1 lg:row-end-2 lg:max-w-96 lg:grid-cols-1 lg:gap-14 lg:justify-self-end"
+      >
         <div className="flex flex-col gap-4">
           <h2 className="text-200 font-bold uppercase">About me</h2>
           <p>

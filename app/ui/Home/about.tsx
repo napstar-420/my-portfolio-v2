@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section className="grid place-items-center bg-neutral-700 bg-opacity-40 px-5 pb-16 pt-24">
       <div className="mx-auto grid max-w-screen-xl gap-16 sm:gap-24 lg:grid-cols-2 lg:items-center">
-        <div>
+        <div data-aos="fade-up">
           <h2 className="subtitle mb-4">
             <span className="text-primary">/</span>&nbsp;&nbsp;About me
           </h2>
@@ -24,7 +24,7 @@ export default function About() {
             className="underline-large capitalize sm:text-2xl"
           />
         </div>
-        <div>
+        <div data-aos="fade-up">
           <h2 className="mb-4 flex items-center gap-2 text-lg font-bold sm:text-xl">
             <span className="text-display-2">2+</span> Years
             <br />
@@ -39,7 +39,10 @@ export default function About() {
           </p>
         </div>
         <div className="bar-muted lg:col-start-1 lg:col-end-3"></div>
-        <div className="items-center md:flex lg:col-start-1 lg:col-end-3">
+        <div
+          data-aos="fade-up"
+          className="items-center md:flex lg:col-start-1 lg:col-end-3"
+        >
           <h2 className="text-300 flex-1 text-center font-bold uppercase md:text-left">
             Previously worked with
           </h2>
