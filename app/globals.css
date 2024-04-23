@@ -128,7 +128,7 @@ body {
   }
 
   .primary-circle-btn {
-    @apply flex items-center justify-center rounded-full bg-primary text-[22px] text-neutral-100 md:h-16 md:w-16 md:text-[26px];
+    @apply rounded-full bg-primary p-2 text-4xl transition-transform hover:scale-90 md:text-5xl lg:text-6xl;
     transform-style: preserve-3d;
     text-decoration: none;
     transition:

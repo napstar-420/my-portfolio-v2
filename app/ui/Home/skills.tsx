@@ -1,12 +1,8 @@
 'use client';
 
 import useEmblaCarousel from 'embla-carousel-react';
-import { UseEmblaCarouselType } from 'embla-carousel-react';
 import skillsSet from '@/app/lib/skills';
-import {
-  MdOutlineKeyboardArrowRight,
-  MdOutlineKeyboardArrowLeft,
-} from 'react-icons/md';
+import CarouselNavigation from '@/app/ui/carousel-navigation';
 
 export default function Skills() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
@@ -49,26 +45,5 @@ export default function Skills() {
         <CarouselNavigation emblaApi={emblaApi} />
       </div>
     </section>
-  );
-}
-
-type EmblaCarouselType = UseEmblaCarouselType[1];
-
-function CarouselNavigation({ emblaApi }: { emblaApi: EmblaCarouselType }) {
-  return (
-    <>
-      <button
-        className="rounded-full bg-primary p-2 text-5xl transition-transform hover:scale-90 md:text-6xl lg:text-7xl"
-        onClick={() => emblaApi?.scrollPrev()}
-      >
-        <MdOutlineKeyboardArrowLeft />
-      </button>
-      <button
-        className="rounded-full bg-primary p-2 text-5xl transition-transform hover:scale-90 md:text-6xl lg:text-7xl"
-        onClick={() => emblaApi?.scrollNext()}
-      >
-        <MdOutlineKeyboardArrowRight />
-      </button>
-    </>
   );
 }
