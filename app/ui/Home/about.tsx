@@ -1,10 +1,11 @@
 import RedirectLink from '@/app/ui/redirect-link';
 import { Routes } from '@/app/routes';
+import Section from '@/app/ui/section';
 
 export default function About() {
   return (
-    <section className="grid place-items-center bg-neutral-700 bg-opacity-40 px-5 pb-16 pt-24">
-      <div className="mx-auto grid max-w-screen-xl gap-16 sm:gap-24 lg:grid-cols-2 lg:items-center">
+    <Section secondaryBg>
+      <div className="grid gap-16 sm:gap-24 lg:grid-cols-2 lg:items-center">
         <div data-aos="fade-up">
           <h2 className="subtitle mb-4">
             <span className="text-primary">/</span>&nbsp;&nbsp;About me
@@ -52,6 +53,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }

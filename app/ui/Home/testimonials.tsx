@@ -6,12 +6,13 @@ import RedirectLink from '@/app/ui/redirect-link';
 import testimonials from '@/app/lib/testimonials';
 import Image from 'next/image';
 import CarouselNavigation from '@/app/ui/carousel-navigation';
+import Section from '@/app/ui/section';
 
 export default function Testimonials() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
 
   return (
-    <section className="relative mx-auto max-w-7xl px-5 py-24 lg:py-60">
+    <Section className="relative">
       <div
         data-aos="fade-up"
         className="mb-12 grid content-between items-center gap-7 md:grid-cols-2"
@@ -43,7 +44,7 @@ export default function Testimonials() {
           <CarouselNavigation emblaApi={emblaApi} />
         </div>
       </div>
-    </section>
+    </Section>
   );
 }
 

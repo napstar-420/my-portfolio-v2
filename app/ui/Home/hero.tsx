@@ -6,7 +6,7 @@ import { Routes } from '@/app/routes';
 
 export default function HeroSection() {
   return (
-    <section className="relative mx-auto grid max-w-screen-xl gap-4 overflow-y-hidden px-5 pb-9 pt-12 sm:grid-cols-2 lg:px-8 lg:pt-36">
+    <section className="relative mx-auto grid max-w-7xl gap-4 overflow-y-hidden px-5 pb-9 pt-12 sm:grid-cols-2 lg:px-8 lg:pt-36">
       <div
         data-aos="fade-up"
         className="lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-2"

@@ -1,13 +1,12 @@
-'use client';
-
 import { FaArrowRight } from 'react-icons/fa';
+import Section from '@/app/ui/section';
 import Input from '@/app/ui/input';
 import TextArea from '@/app/ui/textarea';
 
 export default function Contact() {
   return (
-    <div className="bg-neutral-700 bg-opacity-40 px-5 py-24 sm:py-28 md:py-40 lg:py-60">
-      <div className="mx-auto grid max-w-7xl gap-7 md:grid-cols-2">
+    <Section secondaryBg>
+      <div className="grid gap-7 md:grid-cols-2">
         <div data-aos="fade-up">
           <div className="heading-top-line"></div>
           <h2 className="text-display-3">
@@ -26,6 +25,6 @@ export default function Contact() {
           </button>
         </form>
       </div>
-    </div>
+    </Section>
   );
 }
