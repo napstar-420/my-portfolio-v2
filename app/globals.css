@@ -24,19 +24,19 @@ body {
   */
 
   .text-display-1 {
-    @apply text-[40px] font-bold sm:text-[64px] md:text-[64px] lg:text-[90px];
+    @apply text-[40px] font-bold leading-[1.2em] sm:text-[64px] md:text-[64px] lg:text-[90px];
   }
   .text-display-2 {
-    @apply text-[34px] font-bold sm:text-[40px] md:text-[58px] lg:text-[76px];
+    @apply text-[34px] font-bold leading-[1.2em] sm:text-[40px] md:text-[58px] lg:text-[76px];
   }
   .text-display-3 {
-    @apply text-[24px] font-bold sm:text-[26px] md:text-[32px] lg:text-[52px];
+    @apply text-[24px] font-bold leading-[1.2em] sm:text-[26px] md:text-[32px] lg:text-[52px];
   }
   .text-display-4 {
-    @apply text-[22px] font-bold sm:text-[24px] md:text-[30px] lg:text-[38px];
+    @apply text-[22px] font-bold leading-[1.2em] sm:text-[24px] md:text-[30px] lg:text-[38px];
   }
   .text-display-5 {
-    @apply text-[20px] font-bold sm:text-[22px] md:text-[28px] lg:text-[34px];
+    @apply text-[20px] font-bold leading-[1.2em] sm:text-[22px] md:text-[28px] lg:text-[34px];
   }
 
   /* 
