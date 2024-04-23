@@ -12,7 +12,11 @@ import Contact from '@/app/ui/Home/contact';
 
 export default function Home() {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      duration: 500,
+      easing: 'ease-out',
+      delay: 100,
+    });
   }, []);
 
   return (
