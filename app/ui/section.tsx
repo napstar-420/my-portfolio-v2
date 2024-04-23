@@ -14,9 +14,9 @@ export default function Section({
     <section
       className={clsx(
         'px-5 py-24 sm:py-28 md:py-40 lg:py-60',
+        className,
         secondaryBg && 'bg-neutral-700 bg-opacity-40',
         !secondaryBg && 'mx-auto max-w-7xl',
-        className,
       )}
     >
       {secondaryBg ? (

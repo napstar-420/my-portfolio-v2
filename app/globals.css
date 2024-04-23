@@ -174,7 +174,7 @@ body {
   }
 
   .heading-top-line.large {
-    @apply mb-12 min-h-[4px] max-w-[100px] sm:mb-8 sm:min-h-6 sm:max-w-[148px] md:min-h-2;
+    @apply mb-12 min-h-[4px] max-w-[100px] sm:mb-8 sm:min-h-[6px] sm:max-w-[148px] md:min-h-2;
   }
 
   blockquote {
