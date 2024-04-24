@@ -11,7 +11,7 @@ export default function Hero() {
     >
       <div className="flex flex-col justify-between gap-y-20 md:flex-row md:gap-x-7 lg:gap-x-20">
         <div className="flex flex-col gap-y-12">
-          <div>
+          <div data-aos="fade-up">
             <h2 className="subtitle mb-4">
               <span className="text-primary">/</span>&nbsp;&nbsp;MY STORY
             </h2>
@@ -25,7 +25,7 @@ export default function Hero() {
               non provident aliquid quia.
             </p>
           </div>
-          <div className="overflow-hidden rounded-2xl">
+          <div className="overflow-hidden rounded-2xl" data-aos="fade-up">
             <Image
               src={myStoryImage1}
               alt="My story"
@@ -34,7 +34,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="relative flex flex-col gap-y-12 md:bottom-52 md:flex-col-reverse md:self-start">
-          <div>
+          <div data-aos="fade-up">
             <h2 className="subtitle mb-4">
               <span className="text-primary">/</span>&nbsp;&nbsp;MY STORY
             </h2>
@@ -46,7 +46,7 @@ export default function Hero() {
               non provident aliquid quia.
             </p>
           </div>
-          <div className="overflow-hidden rounded-2xl">
+          <div data-aos="fade-up" className="overflow-hidden rounded-2xl">
             <Image
               src={myStoryImage2}
               alt="My story"

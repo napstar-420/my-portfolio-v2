@@ -1,12 +1,12 @@
 import Carousel from '@/app/ui/carousel';
-import skillsSet from '@/app/lib/skills';
+import tools from '@/app/lib/tools';
 
 export default function Skills() {
   return (
     <Carousel
       title="My Skills"
       description="Technologies i have worked with"
-      items={skillsSet}
+      items={tools}
     />
   );
 }
