@@ -3,12 +3,12 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Hero from '@/app/ui/home/hero';
-import About from '@/app/ui/home/about';
-import Skills from '@/app/ui/home/skills';
-import Portfolio from '@/app/ui/home/portfolio';
-import Testimonials from '@/app/ui/home/testimonials';
-import Contact from '@/app/ui/home/contact';
+import Hero from '@/app/ui/hero';
+import About from '@/app/ui/about';
+import Skills from '@/app/ui/skills';
+import Portfolio from '@/app/ui/projects';
+import Testimonials from '@/app/ui/testimonials';
+import Contact from '@/app/ui/contact';
 
 export default function Home() {
   useEffect(() => {
