@@ -25,7 +25,7 @@ export default function Portfolio() {
           <PortfolioCard {...portfolioItems[0]} />
         </div>
         <div className="grid gap-8 md:gap-10">
-          {portfolioItems.slice(1).map((item, index) => (
+          {portfolioItems.slice(1, 3).map((item, index) => (
             <PortfolioCard key={index} {...item} />
           ))}
         </div>

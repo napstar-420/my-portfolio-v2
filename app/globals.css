@@ -156,7 +156,7 @@ body {
   }
 
   .badge-primary.small {
-    @apply px-[20px] py-[10px] text-[14px] sm:px-[22px] sm:py-[12px] sm:text-base md:py-[14px];
+    @apply px-[18px] py-[6px] text-[14px] sm:px-[16px] sm:py-[8px] sm:text-base;
   }
 
   .badge-primary.large {
