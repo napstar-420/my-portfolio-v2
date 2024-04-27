@@ -1,6 +1,6 @@
 import Section from '@/app/ui/section';
 import RedirectLink from '../ui/redirect-link';
-import { Routes } from '../routes';
+import { Routes } from '../constants/routes';
 
 export default function blog() {
   return (

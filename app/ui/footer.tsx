@@ -2,7 +2,7 @@ import Image from 'next/image';
 import myImage from '@/public/my-pic.png';
 import SocialMediaLinks from '@/app/ui/social-media-links';
 import RedirectLink from '@/app/ui//redirect-link';
-import { Routes, RoutesMap } from '../routes';
+import { Routes, RoutesMap } from '../constants/routes';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -19,7 +19,7 @@ export default function Footer() {
               <div className="col-start-2 col-end-4">
                 <h5 className="text-display-5">Zohaib Khan</h5>
                 <p className="text-400 font-medium text-neutral-500">
-                  Fullstack engineer at Freedom.tm
+                  Fullstack Web Developer
                 </p>
               </div>
             </div>

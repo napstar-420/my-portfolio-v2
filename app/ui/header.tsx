@@ -1,12 +1,13 @@
 import Link from 'next/link';
 import { FaCode } from 'react-icons/fa';
-import { Routes } from '../routes';
+import { Routes } from '../constants/routes';
 
 const navLinks = [
   { label: 'Home', href: Routes.HOME },
   { label: 'About', href: Routes.ABOUT },
   { label: 'Portfolio', href: Routes.PORTFOLIO },
   { label: 'Blog', href: Routes.BLOG },
+  { label: 'Contact', href: Routes.CONTACT },
 ];
 
 export default function Header() {

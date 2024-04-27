@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Routes } from './routes';
+import { Routes } from './constants/routes';
 import RedirectLink from '@/app/ui/redirect-link';
 
 export default function NotFound() {

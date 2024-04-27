@@ -1,5 +1,5 @@
 import Section from '@/app/ui/section';
-import portfolioItems from '@/app/lib/portfolio';
+import portfolioItems from '@/app/constants/portfolio';
 import PortfolioCard from '@/app/ui/portfolio-card';
 
 export default function Portfolio() {

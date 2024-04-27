@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
-import { Routes } from '../routes';
+import { Routes } from '../constants/routes';
 
 interface ComponentProps {
   id: string;

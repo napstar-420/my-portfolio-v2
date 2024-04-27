@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { LuArrowRight } from 'react-icons/lu';
 import clsx from 'clsx';
-import { Routes } from '@/app/routes';
+import { Routes } from '@/app/constants/routes';
 
 interface ComponentProps {
   label: string;

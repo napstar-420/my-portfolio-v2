@@ -1,5 +1,5 @@
 import RedirectLink from '@/app/ui/redirect-link';
-import { Routes } from '@/app/routes';
+import { Routes } from '@/app/constants/routes';
 import Section from '@/app/ui/section';
 
 export default function About() {

@@ -119,6 +119,10 @@ body {
       color 0.3s;
   }
 
+  .primary-btn:disabled {
+    @apply cursor-not-allowed bg-neutral-500;
+  }
+
   .primary-btn.small {
     @apply px-[18px] py-4 sm:w-max sm:px-6 sm:py-4;
   }

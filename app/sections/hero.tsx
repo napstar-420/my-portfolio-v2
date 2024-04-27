@@ -2,7 +2,7 @@ import Image from 'next/image';
 import RedirectLink from '@/app/ui/redirect-link';
 import MyPic from '@/public/my-pic.png';
 import SocialMediaLinks from '@/app/ui/social-media-links';
-import { Routes } from '@/app/routes';
+import { Routes } from '@/app/constants/routes';
 
 export default function HeroSection() {
   return (

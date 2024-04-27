@@ -1,6 +1,5 @@
 import Section from '@/app/ui/section';
-import Input from '@/app/ui/input';
-import TextArea from '@/app/ui/textarea';
+import ContactForm from '@/app/ui/contact-form';
 
 export default function Contact() {
   return (
@@ -21,12 +20,7 @@ export default function Contact() {
             </p>
           </div>
           <div>
-            <form className="grid gap-10 rounded-2xl bg-neutral-700 px-8 py-14 md:px-12 md:py-20 lg:px-14">
-              <Input type="text" placeholder="Enter your name" required />
-              <Input type="email" placeholder="Enter your email" required />
-              <TextArea placeholder="Enter your message" required />
-              <button className="primary-btn">Submit</button>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </Section>

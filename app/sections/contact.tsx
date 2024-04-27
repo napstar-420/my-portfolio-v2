@@ -2,6 +2,7 @@ import { FaArrowRight } from 'react-icons/fa';
 import Section from '@/app/ui/section';
 import Input from '@/app/ui/input';
 import TextArea from '@/app/ui/textarea';
+import ContactForm from '@/app/ui/contact-form';
 
 export default function Contact() {
   return (
@@ -16,14 +17,9 @@ export default function Contact() {
             <FaArrowRight className="inline rotate-90 text-primary md:rotate-0" />
           </h2>
         </div>
-        <form className="grid gap-10" data-aos="fade-up">
-          <Input type="text" placeholder="Name" required />
-          <Input type="email" placeholder="Email" required />
-          <TextArea placeholder="Your message here" required />
-          <button className="primary-btn" type="submit">
-            Submit
-          </button>
-        </form>
+        <div data-aos="fade-up">
+          <ContactForm />
+        </div>
       </div>
     </Section>
   );

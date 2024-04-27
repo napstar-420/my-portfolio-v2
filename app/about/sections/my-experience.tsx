@@ -1,7 +1,7 @@
 import Section from '@/app/ui/section';
 import RedirectLink from '@/app/ui/redirect-link';
-import { Routes } from '@/app/routes';
-import experiences from '@/app/lib/experiences';
+import { Routes } from '@/app/constants/routes';
+import experiences from '@/app/constants/experiences';
 
 export default function MyExperience() {
   return (

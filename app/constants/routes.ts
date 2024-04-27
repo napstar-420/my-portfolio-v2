@@ -4,6 +4,7 @@ export enum Routes {
   PORTFOLIO = '/portfolio',
   BLOG = '/blog',
   CONTACT = '/contact',
+  THANKS = '/contact/thanks',
 }
 
 export const RoutesMap = Object.entries({

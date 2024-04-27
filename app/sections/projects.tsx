@@ -1,7 +1,7 @@
 import RedirectLink from '@/app/ui/redirect-link';
-import portfolioItems from '@/app/lib/portfolio';
+import portfolioItems from '@/app/constants/portfolio';
 import PortfolioCard from '../ui/portfolio-card';
-import { Routes } from '@/app/routes';
+import { Routes } from '@/app/constants/routes';
 import Section from '@/app/ui/section';
 
 export default function Portfolio() {

@@ -1,5 +1,5 @@
 import Carousel from '@/app/ui/carousel';
-import skillsSet from '@/app/lib/skills';
+import skillsSet from '@/app/constants/skills';
 
 export default function Skills() {
   return (

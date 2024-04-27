@@ -1,5 +1,5 @@
 import Section from '@/app/ui/section';
-import education from '@/app/lib/education';
+import education from '@/app/constants/education';
 
 export default function MyEducation() {
   return (

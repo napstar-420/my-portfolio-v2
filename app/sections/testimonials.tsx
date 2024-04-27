@@ -1,9 +1,9 @@
 'use client';
 
 import useEmblaCarousel from 'embla-carousel-react';
-import { Routes } from '@/app/routes';
+import { Routes } from '@/app/constants/routes';
 import RedirectLink from '@/app/ui/redirect-link';
-import testimonials from '@/app/lib/testimonials';
+import testimonials from '@/app/constants/testimonials';
 import Image from 'next/image';
 import CarouselNavigation from '@/app/ui/carousel-navigation';
 import Section from '@/app/ui/section';
