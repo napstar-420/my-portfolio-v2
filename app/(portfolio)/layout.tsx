@@ -28,7 +28,7 @@ export default function PortfolioLayout({
   }, []);
 
   return (
-    <div className={clsx(font.className)}>
+    <div className={clsx(font.className, 'pt-20 md:pt-0')}>
       <Header />
       {children}
       <Footer />
