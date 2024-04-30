@@ -1,12 +1,20 @@
 'use server';
 
 import { revalidatePath } from 'next/cache';
+import nodemailer from 'nodemailer';
+import dotenv from 'dotenv';
 import dbConnect from '@/app/lib/dbConnect';
 import Message from '@/app/models/message';
 import { MessageSchema } from '@/app/lib/schemas';
 import { idGenerator } from '@/app/helpers/id-generator';
 import { redirect } from 'next/navigation';
 import { Routes } from '@/app/constants/routes';
+
+dotenv.config();
+
+const RECEIVER_EMAIL_ADDR = process.env.RECEIVER_EMAIL_ADDR;
+const SENDER_EMAIL_ADDR = process.env.SENDER_EMAIL_ADDR;
+const SENDER_EMAIL_PASS = process.env.SENDER_EMAIL_PASS;
 
 const CreateMessage = MessageSchema.omit({
   id: true,
@@ -39,14 +47,39 @@ export async function createMessage(prevState: any, formData: FormData) {
   } catch (error) {
     console.log(error);
     return {
-      message: 'Database Error: Failed to Create Message.',
+      message: 'Failed to send message. Please try again later',
     };
   }
 
+  // Send email notification to the site owner
+  const subject = `New Message from ${name}`;
+  const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+  sendEmail(subject, body);
+
+  // Redirect to the thanks page
   revalidatePath('/dashboard/messages');
   redirect(Routes.THANKS);
+}
 
-  return {
-    message: 'Message Created Successfully.',
+async function sendEmail(subject: string, body: string) {
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: SENDER_EMAIL_ADDR,
+      pass: SENDER_EMAIL_PASS,
+    },
+  });
+
+  const mailOptions = {
+    from: SENDER_EMAIL_ADDR,
+    to: RECEIVER_EMAIL_ADDR,
+    subject: subject,
+    text: body,
   };
+
+  try {
+    await transporter.sendMail(mailOptions);
+  } catch (error) {
+    console.error('Error sending email notification:', error);
+  }
 }
