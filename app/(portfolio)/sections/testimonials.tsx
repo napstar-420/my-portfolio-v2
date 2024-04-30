@@ -21,7 +21,7 @@ export default function Testimonials() {
           <h2 className="subtitle">
             <span className="text-primary">/</span>&nbsp;&nbsp;TESTIMONIALS
           </h2>
-          <h3 className="text-display-3">What the clients say about my work</h3>
+          <h3 className="text-display-3">What the teammates say about me</h3>
         </div>
         <RedirectLink
           href={Routes.CONTACT}
@@ -56,21 +56,27 @@ export function TestimonialCard({
   company,
 }: (typeof testimonials)[0]) {
   return (
-    <div className="embla__slide flex flex-[0_0_100%] flex-col items-center gap-4 sm:flex-row sm:gap-8">
-      <div className="w-full overflow-hidden rounded-2xl bg-neutral-500 sm:h-full lg:h-[497px]">
-        <Image src={image} alt={name} className="h-full w-full object-cover" />
-      </div>
-      <div>
-        <h3 className="text-display-2 text-neutral-500">{company}</h3>
-        <p className="text-display-5 mb-6 font-bold text-neutral-50">
-          &ldquo;{description}&quot;
-        </p>
+    <div className="embla__slide flex-[0_0_100%]">
+      <div className="grid items-center gap-4 sm:grid-cols-[2fr_3fr] sm:gap-8">
+        <div className="w-full overflow-hidden rounded-2xl bg-neutral-500 sm:h-full lg:h-[497px]">
+          <Image
+            src={image}
+            alt={name}
+            className="h-full w-full object-cover"
+          />
+        </div>
         <div>
-          <h4 className="text-400 font-bold uppercase">
-            <span className="mr-4 text-primary">/</span>
-            {name}
-          </h4>
-          <p className="text-300 mt-2 uppercase">{title}</p>
+          <h3 className="text-display-2 text-neutral-500">{company}</h3>
+          <p className="text-display-5 mb-6 font-bold text-neutral-50">
+            &ldquo;{description}&quot;
+          </p>
+          <div>
+            <h4 className="text-400 font-bold uppercase">
+              <span className="mr-4 text-primary">/</span>
+              {name}
+            </h4>
+            <p className="text-300 mt-2 uppercase">{title}</p>
+          </div>
         </div>
       </div>
     </div>

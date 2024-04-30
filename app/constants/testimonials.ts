@@ -1,31 +1,22 @@
-import image from '@/public/user-Icon.jpg';
+import image from '@/public/user-Icon.png';
 
 const testimonials = [
   {
     id: 1,
-    name: 'John Doe',
-    title: 'Software Engineer',
-    company: 'Google',
+    name: 'Janno E. Nuyles',
+    title: 'SDE - Freedom Ltd.',
+    company: 'Freedom',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet risus nec sapien scelerisque.',
+      'Mr. Khan is reliable and makes the stressful workstation more easy and fun. He loves to add documentation which helps other teammates when new trouble arises while developing.',
     image: image,
   },
   {
     id: 2,
-    name: 'Jane Doe',
-    title: 'Product Manager',
-    company: 'Google',
+    name: 'Nimra',
+    title: 'Backend Developer',
+    company: 'Plotano',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet risus nec sapien scelerisque.',
-    image: image,
-  },
-  {
-    id: 3,
-    name: 'James Doe',
-    title: 'Designer',
-    company: 'Google',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet risus nec sapien scelerisque.',
+      'Zohaib is amazing to work with! His attention to detail and dedication to quality are outstanding. I highly recommend them for any project',
     image: image,
   },
 ];
