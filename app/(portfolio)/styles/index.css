@@ -1,0 +1,240 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-main: #fff;
+  --background-main: #1b1f24;
+}
+
+body {
+  color: var(--foreground-main);
+  background: var(--background-main);
+}
+
+@layer components {
+  .bar-muted {
+    @apply h-[1px] w-full bg-neutral-700;
+  }
+
+  /* 
+  ---------------------------------------
+  TEXT DISPLAY CLASSES
+  ---------------------------------------
+  */
+
+  .text-display-1 {
+    @apply text-[40px] font-bold leading-[1.2em] sm:text-[64px] md:text-[64px] lg:text-[90px];
+  }
+  .text-display-2 {
+    @apply text-[34px] font-bold leading-[1.2em] sm:text-[40px] md:text-[58px] lg:text-[76px];
+  }
+  .text-display-3 {
+    @apply text-[24px] font-bold leading-[1.2em] sm:text-[26px] md:text-[32px] lg:text-[52px];
+  }
+  .text-display-4 {
+    @apply text-[22px] font-bold leading-[1.2em] sm:text-[24px] md:text-[30px] lg:text-[38px];
+  }
+  .text-display-5 {
+    @apply text-[20px] font-bold leading-[1.2em] sm:text-[22px] md:text-[28px] lg:text-[34px];
+  }
+
+  /* 
+  ---------------------------------------
+  TEXT HEADING CLASSES
+  ---------------------------------------
+  */
+
+  .text-heading-1 {
+    @apply text-[32px] font-bold sm:text-[26px] md:text-[48px] lg:text-[54px];
+  }
+  .text-heading-2 {
+    @apply text-[26px]  font-bold md:text-[30px] lg:text-[38px];
+  }
+  .text-heading-3 {
+    @apply text-[22px] font-bold lg:text-[24px];
+  }
+  .text-heading-4 {
+    @apply text-[20px] font-bold md:text-[22px];
+  }
+  .text-heading-5 {
+    @apply text-[16px] font-bold md:text-[18px];
+  }
+  .text-heading-6 {
+    @apply text-[14px] font-bold md:text-[16px];
+  }
+
+  /* 
+  ---------------------------------------
+  TEXT BODY CLASSES
+  ---------------------------------------
+  */
+
+  .text-body-large {
+    @apply text-base md:text-xl lg:text-2xl;
+  }
+
+  .text-body {
+    @apply text-[18px];
+  }
+
+  .text-body-small {
+    @apply text-[14px];
+  }
+
+  /* 
+  ---------------------------------------
+  TEXT CLASSES
+  ---------------------------------------
+  */
+
+  .text-400 {
+    @apply text-xl md:text-[22px] lg:text-[24px];
+  }
+
+  .text-300 {
+    @apply text-base md:text-[20px];
+  }
+
+  .text-200 {
+    @apply text-base md:text-lg;
+  }
+
+  .subtitle {
+    @apply text-lg font-bold uppercase md:text-xl;
+  }
+
+  /* 
+  ---------------------------------------
+  BUTTON CLASSES
+  ---------------------------------------
+  */
+  .primary-btn {
+    @apply inline-block w-full cursor-pointer rounded-lg bg-primary px-8 py-[18px] text-center font-bold text-neutral-100 sm:w-max sm:px-8 sm:py-5;
+    transform-style: preserve-3d;
+    text-decoration: none;
+    transition:
+      background-color 0.3s,
+      transform 0.3s,
+      color 0.3s;
+  }
+
+  .primary-btn:disabled {
+    @apply cursor-not-allowed bg-neutral-500;
+  }
+
+  .primary-btn.small {
+    @apply px-[18px] py-4 sm:w-max sm:px-6 sm:py-4;
+  }
+
+  .primary-btn.large {
+    @apply px-[52px] py-6 text-xl md:px-[52px] md:py-[26px];
+  }
+
+  .primary-circle-btn {
+    @apply rounded-full bg-primary p-2 text-4xl transition-transform hover:scale-90 md:text-5xl lg:text-6xl;
+    transform-style: preserve-3d;
+    text-decoration: none;
+    transition:
+      background-color 0.3s,
+      transform 0.3s,
+      color 0.3s;
+  }
+
+  .primary-circle-btn.small {
+    @apply h-[50px] w-[50px] text-[22px];
+  }
+
+  .primary-circle-btn.small {
+    @apply h-[72px] w-[72px] text-[26px] md:h-[88px] md:w-[88px] md:text-[32px];
+  }
+
+  /* 
+  ---------------------------------------
+  BADGE CLASSES
+  ---------------------------------------
+  */
+
+  .badge-primary {
+    @apply inline-block rounded-[10px] bg-neutral-600 px-[22px] py-[14px] font-bold text-neutral-100 sm:px-[28px] sm:text-[18px] md:py-[18px];
+  }
+
+  .badge-primary.small {
+    @apply px-[18px] py-[6px] text-[14px] sm:px-[16px] sm:py-[8px] sm:text-base;
+  }
+
+  .badge-primary.large {
+    @apply px-[28px] py-[22px] text-xl sm:px-[38px] sm:text-base md:py-[22px];
+  }
+
+  /* 
+  ---------------------------------------
+  STYLES
+  ---------------------------------------
+  */
+
+  .heading-top-line {
+    @apply mb-6 min-h-[5px] w-full max-w-[118px] bg-neutral-100;
+  }
+
+  .heading-top-line.large {
+    @apply mb-12 min-h-[4px] max-w-[100px] sm:mb-8 sm:min-h-[6px] sm:max-w-[148px] md:min-h-2;
+  }
+
+  blockquote {
+    @apply mb-8 mt-10 rounded-[18px] bg-neutral-700 px-6 py-14 text-center text-[18px] font-bold leading-[1.667em] text-neutral-100
+      sm:mb-10 sm:mt-12 sm:px-8 sm:py-20 sm:text-[22px]
+      md:mb-12 md:mt-16 md:rounded-3xl md:px-[74px] md:py-[132px] md:text-[30px];
+  }
+
+  figcaption {
+    @apply mt-4 block text-center leading-[1.667em] text-neutral-400 md:text-[18px];
+  }
+
+  p {
+    @apply text-neutral-400 lg:text-[18px];
+  }
+}
+
+.redirect-link {
+  position: relative;
+  border-bottom-width: 1.5px;
+}
+
+.redirect-link.underline-large {
+  position: relative;
+  border-bottom-width: 3px;
+}
+
+.redirect-link::before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1.5px;
+  bottom: -1.5px;
+  left: 0%;
+  background-color: var(--foreground-main);
+  transition: all 300ms ease;
+}
+
+.redirect-link.underline-large::before {
+  height: 3px;
+  bottom: -3px;
+}
+
+.redirect-link:hover::before {
+  width: 100%;
+}
+
+.redirect-link:hover svg {
+  transform: translateX(0.4rem);
+}
+
+.portfolio-card .portfolio-image-wrapper {
+  transform-style: preserve-3d;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+}
+
+.portfolio-card:hover .portfolio-image-wrapper {
+  transform: translate3d(0px, 10px, 0px) scale3d(1.1, 1.1, 1.1);
+}
